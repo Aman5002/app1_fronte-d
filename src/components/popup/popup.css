@@ -1,0 +1,162 @@
+.popupback {
+  background-color: black;
+  position: fixed;
+  height: 100%;
+  opacity: 0.7;
+  width: 100%;
+  /* z-index: 10; */
+  overflow: hidden;
+}
+.main {
+  color: rgb(0, 0, 0);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  opacity: 1;
+  transform: translate(-50%, -50%);
+  height: 35rem;
+  width: 55rem;
+  /* border: 2px solid rgb(0, 0, 0); */
+  background-color: white;
+  border-radius: 15px;
+  z-index: 11;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  /* margin-right: 1rem; */
+}
+.login {
+  margin-right: 2rem;
+  /* margin-left: 5%; */
+  margin-top: 4rem;
+  /* border: 2px solid black; */
+  width: 100%;
+  height: 100%;
+}
+.login p {
+  color: rgb(56, 56, 56);
+  margin-left: 2px;
+  margin-top: -8px;
+  transition-property: font-weight , font-size;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-in-out;
+  /* margin-right: 1rem; */
+}
+.cred {
+  margin-left: 5px;
+}
+input[type=text]:focus {
+  background-color: rgb(255, 255, 255);
+  border: 5px solid rgb(216, 97, 227);
+  border-radius: 0px;
+  padding-left: 8px;
+}
+input[type=password]:focus {
+  background-color: rgb(255, 255, 255);
+  border: 5px solid rgb(216, 97, 227);
+  border-radius: 0px;
+  padding-left: 8px;
+  padding-right: 28px;
+}
+.cred input {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border: 3px solid #ffffff;
+  border-radius: 5px;
+  /* box-shadow: inset; */
+  width: 23rem;
+  height: 2.7rem;
+  padding: 8px;
+  background-color: #fbe9ed;
+  transition-property: height;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+.cred input:hover {
+  height: 3.5rem;
+  /* border: 2px solid rgb(201, 50, 231); */
+}
+.cred label {
+  padding: 2px;
+  color: rgb(56, 56, 56);
+}
+.btn1 {
+  position: absolute;
+  right: 2.1rem;
+  background-color: #7f1774;
+  height: 3rem;
+  width: 10rem;
+  border: 1px solid #7f1774;
+  color: white;
+}
+.btn1disable {
+  position: absolute;
+  right: 2.1rem;
+  background-color: #b555ab;
+  border: 1px solid #c863be;
+  height: 3rem;
+  width: 10rem;
+  color: white;
+}
+.xbtn {
+  position: absolute;
+  width: 1.5rem;
+  /* height: 1.7rem; */
+  top: 1%;
+  right: 1%;
+  background-color: #fbe9ed;
+  border: 1px solid white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition-property:  width ;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+.terms {
+  position: absolute;
+  bottom: 5px;
+  color: rgb(88, 88, 88);
+  font-size: 13px;
+  font-weight: 400;
+}
+.img1 img {
+  position: absolute;
+  left: -2px;
+  top: -3px;
+  /* padding: 2px; */
+  margin-bottom: 5px;
+  /* margin-right: 50%; */
+  /* border: 2px solid black; */
+  /* border-radius-top: 10px; */
+  width: 430px;
+  height: 564px;
+  z-index: 0;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.alert {
+  margin-top: -40px;
+  margin-left: -15px;
+  margin-bottom: -15px;
+  color: red;
+  /* transition: ease-in-out;
+  transition-delay:1s; */
+  font-weight: 500;
+}
+.heading{
+  font-weight: 500;
+  font-size: 26px;
+  transition-property:  font-size, font-weight;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+.secbutton{
+  background-color: white;
+  border: 1px solid white;
+  font-weight: 380;
+  text-decoration: underline;
+  position: absolute;
+  margin-left: 8rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
