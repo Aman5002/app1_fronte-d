@@ -3,7 +3,7 @@ function Editimg(props) {
   return (
     <>
       <div>
-        <div className="edit"style={{height: "240px"}}>
+        <div className="edit" style={ { height: "240px" } }>
           <div  >
             <div>      <button className="xbtn" onClick={ () => { props.showpop(false) } }>
               <b>X</b>
