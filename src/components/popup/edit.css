@@ -25,7 +25,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 65%;
+    height: 55%;
     width: 30%;
     border: 2px solid rgb(197, 194, 194);
     border-radius: 15px ;
@@ -37,7 +37,21 @@
 }
 
 
+.add{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 65%;
+  width: 30%;
+  border: 2px solid rgb(197, 194, 194);
+  border-radius: 15px ;
+  
+  opacity: 1;
 
+  background-color: white;
+  z-index: 10;
+}
 
 
   .main {

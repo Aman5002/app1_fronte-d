@@ -1,8 +1,8 @@
-import React, {useState} from 'react'
+import React from 'react'
 import './edit.css'
 function Additem(props) {
-const {settitle , setdesc , settag, seturl} = props;
-const{title , desc, tag, url} = props
+const {settitle , setdesc , settag, } = props;
+
 
 
     const titlechange = (event) => {
@@ -27,7 +27,7 @@ const{title , desc, tag, url} = props
 
 
         
-           <div className="edit">
+           <div className="add">
           
     
     {/* {status && <h4>{status}</h4>} */}
@@ -90,7 +90,7 @@ const{title , desc, tag, url} = props
                 
               /> */}
 
-<input type='file' name='file' onChange={props.handleFileChange}></input>
+<input type='file' name='file' onChange={props.handleFileChange} required></input>
                    
           
             </div>

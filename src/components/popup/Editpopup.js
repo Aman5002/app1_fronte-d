@@ -1,8 +1,8 @@
 import React from 'react'
 import './edit.css'
 function Editpopup(props) {
-const {settitle , setdesc , settag, seturl} = props;
-const{title , desc, tag, url} = props
+const {settitle , setdesc , settag} = props;
+const{title , desc, tag} = props
 
 
     const titlechange = (event) => {
@@ -14,9 +14,9 @@ const{title , desc, tag, url} = props
       const tagchange = (event) => {
         settag(event.target.value);
       };
-      const imgurlchange = (event) => {
-        seturl(event.target.value);
-      };
+      // const imgurlchange = (event) => {
+      //   seturl(event.target.value);
+      // };
   return (
     <>
     <div>
@@ -73,17 +73,7 @@ const{title , desc, tag, url} = props
                 
               />
               <br></br>
-              <label>
-                <b>Image Url</b>
-              </label>
-              <br></br>
-              <input
-                type="text"
-                placeholder="Image url" 
-                onChange={imgurlchange}
-                value={url}
-                
-              />
+              
              
           
             </div>
