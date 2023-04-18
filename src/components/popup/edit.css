@@ -1,0 +1,139 @@
+.pops{
+    /* background-color: black; */
+    /* opacity: 0.5; */
+    height: 100%;
+    width: 100%;
+
+    background-color:rgba(133, 122, 122, 0.5);
+    position: fixed;;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid black;
+    z-index: 1;
+}
+.all{
+    /* background-color: black; */
+    /* opacity: 0.5; */
+    height: 100%;
+    width: 100%;
+
+    z-index: 1;
+}
+.edit{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 65%;
+    width: 30%;
+    border: 2px solid rgb(197, 194, 194);
+    border-radius: 15px ;
+    
+    opacity: 1;
+
+    background-color: white;
+    z-index: 10;
+}
+
+
+
+
+
+  .main {
+    color: rgb(0, 0, 0);
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    height: 35rem;
+    width: 55rem;
+    /* border: 2px solid rgb(0, 0, 0); */
+    background-color: white;
+    border-radius: 15px;
+    z-index: 11;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    /* margin-right: 1rem; */
+  }
+  .lg {
+    /* margin-right: 5%; */
+    /* margin-left: 7%; */
+    position: absolute;;
+    margin-top: 1.8rem;
+    /* border: 2px solid black; */
+    width: 100%;
+    height: 100%;
+  }
+  .lg p {
+    color: rgb(56, 56, 56);
+    margin-left: 2px;
+    margin-top: -8px;
+    transition-property: font-weight , font-size;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-in-out;
+    /* margin-right: 1rem; */
+  }
+  .cont {
+    margin-left: 5px;
+    margin-right: 5px;
+
+    /* left: 50%;
+    transform: translate(-50%, -50%); */
+  }
+  input[type=text]:focus {
+    background-color: rgb(255, 255, 255);
+    border: 5px solid rgb(216, 97, 227);
+    border-radius: 0px;
+    padding-left: 8px;
+  }
+
+
+  .cont input {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 3px solid #ffffff;
+    border-radius: 5px;
+    /* box-shadow: inset; */
+  
+    width: 100%;
+
+    height: 2.7rem;
+    padding: 8px;
+    background-color: #fbe9ed;
+    transition-property: height;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+  }
+  .cont input:hover {
+    height: 3.4rem;
+    /* border: 2px solid rgb(201, 50, 231); */
+  }
+  .cont label {
+    padding: 2px;
+    color: rgb(56, 56, 56);
+  }
+  .bt {
+    position: absolute;
+    right: 2.1rem;
+
+    height: 2.5rem;
+    width: 7rem;
+  
+  }
+  .btn1disable {
+    position: absolute;
+    right: 2.1rem;
+    background-color: #b555ab;
+    border: 1px solid #c863be;
+    height: 3rem;
+    width: 10rem;
+    color: white;
+  }
+  
+.h4{
+    margin-left: 5px;
+    /* padding: 5px; */
+}
