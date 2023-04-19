@@ -2,6 +2,7 @@
 # dependencies
 /.pnp
 /node_modules/
+/public/images/
 .pnp.js
 # testing
 /coverage
