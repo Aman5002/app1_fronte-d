@@ -1,7 +1,13 @@
-import React from 'react'
+import React, {useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 function NAVBAR(props) {
-  // const [pop, setpop] = useState(false);
+  const [userEmail, setuserEmail] = useState('');
+
+
+
+
+
+  
   const location = useLocation()
   const onClickHandler = () => {
     props.pop(true)
@@ -11,6 +17,34 @@ function NAVBAR(props) {
     props.pop(true)
     props.signup(true)
   }
+
+
+const getemail = async() => {
+
+
+const user_email = await fetch('http://localhost:5000/api/images/fetchuser', {
+
+  method: "GET",
+  headers: {
+    'Content-Type': 'application/json',
+    'auth-token': localStorage.getItem('token')
+  },}
+)
+const json = await user_email.json()
+// console.log(json)
+setuserEmail(json)
+}
+
+useEffect(() => {
+  if (props.lh){
+    getemail()
+  }
+  else{
+    setuserEmail(' ')
+    
+  }
+ 
+}, [props.lh]);
   return (
     <div style={{overflow:"hidden"}}>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -31,8 +65,12 @@ function NAVBAR(props) {
       </ul>
       <form className="d-flex">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+      <div className="useremail">
+            {userEmail}
+          </div>
         <li className="nav-item">
-          {!props.lh ?<>  <Link className="btn btn-success mx-1" onClick={onClickHandler} to="#">Log In</Link>  <Link className="btn btn-success mx-1" onClick={onsignuphandler} to="#">SignUp</Link> </>:<Link className="btn btn-success" onClick={props.logout} to="/">Log Out</Link> }
+        
+          {!props.lh ?<>  <Link className="btn btn-success mx-1" onClick={onClickHandler} to="#">Log In</Link>  <Link className="btn btn-success mx-1" onClick={onsignuphandler} to="#">SignUp</Link> </>:     <Link className="btn btn-success" onClick={props.logout} to="/">Log Out</Link> }
         </li>
       </ul>
       </form>

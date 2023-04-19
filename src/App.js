@@ -38,17 +38,17 @@ function App() {
   return (
     <div>
       <Router>
-        <NavBar lh={ login } logout={ logouthandler } pop={ setpop } signup = {setsignup} />
+        <NavBar lh={ login } logout={ logouthandler } pop={ setpop } signup={ setsignup } />
         <div className="container">
-        <div className="container my-3" style={ { position: "absolute", overflow: "hidden" } }>
-          <Routes>
-            <Route path="/" element={ <Home /> } />
-            <Route path="*" element={ <Home /> } />
-            <Route path="/images" element={ <Protected islogin={ login } pop={ setpop } >  <Images /> </Protected> } />
-          </Routes>
+          <div className="container my-3" style={ { position: "absolute", overflow: "hidden" } }>
+            <Routes>
+              <Route path="/" element={ <Home /> } />
+              <Route path="*" element={ <Home /> } />
+              <Route path="/images" element={ <Protected islogin={ login } pop={ setpop } >  <Images /> </Protected> } />
+            </Routes>
+          </div>
         </div>
-        </div>
-        { pop && <Popup pop={ setpop } lh={ loginhandler } signup = {signup} setsign={setsignup} /> }
+        { pop && <Popup pop={ setpop } lh={ loginhandler } signup={ signup } setsign={ setsignup } /> }
       </Router>
     </div>
   );

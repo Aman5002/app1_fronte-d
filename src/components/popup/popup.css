@@ -214,6 +214,20 @@ input[type=file]::file-selector-button:hover {
 
 .edic i {
   font-size: 20px;
-  padding-top: 5px;
+  padding-top: 6px;
+  transition: transform .2s;
 
+}
+.edic i:hover {
+transform: scale(1.2);
+}
+
+
+i{
+  font-size: 20px;
+  transition: transform .3s;
+}
+i:hover{
+  
+  transform: scale(1.3);
 }

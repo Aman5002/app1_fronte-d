@@ -57,14 +57,14 @@ function Images() {
     setshowadditem(false)
     //  console.log(formData)
   };
-  console.log(imed, "images")
-  console.log(edit, " edit")
+  // console.log(imed, "images")
+  // console.log(edit, " edit")
   const handleFileChange = (e) => {
     const img = {
       data: e.target.files[0],
       // data : './images/Screenshot (1).png-1681800589661-.png'
     }
-    console.log(e.target.files)
+    // console.log(e.target.files)
     setImage(img)
   }
   function clearhandler() {

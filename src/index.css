@@ -6,8 +6,19 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.useremail{
+  color: white;
+padding-top: 5px;
+padding-bottom:5px;
+padding-right: 10px;
+}
+.cardhover{
+transition: transform .3s;
+}
+.cardhover:hover{
+transform: scale(1.1)
 }
