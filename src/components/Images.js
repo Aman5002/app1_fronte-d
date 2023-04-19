@@ -152,6 +152,7 @@ function Images() {
           handleFileChange={ handleFileChange }
         // setimage={setImage}
         /> }
+        
       </div>
     </>
   )

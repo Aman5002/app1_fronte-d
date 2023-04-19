@@ -38,7 +38,10 @@ function ImageItem(props) {
         </div>
       </div>
         </div>
+        
     </div>
+
+
   )
 }
 export default ImageItem
